@@ -28,6 +28,7 @@ int main(int argc, char const *argv[])
      /* Integers
         - Occupy 4 bytes
      */
+     int number {13};
 
 }
 
