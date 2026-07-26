@@ -81,17 +81,30 @@ int main(int argc, char const *argv[]) {
       double(8 bytes | 15 casas de precisao), (recomendado)
       long double (16 bytes)
   */
+  /*
+    cout << setprecision(20); // set terminal precision
 
-  cout << setprecision(20); // set terminal precision
+    float float1{1.1234567890123456789f}; // f indicates that its a float
+                                          // otherwise compiler treats as a
+    double cout << float1
+         << endl; // output is broken from 1.123456 because the precision is 7
 
-  float float1{1.1234567890123456789f}; // f indicates that its a float
-                                        // otherwise compiler treats as a double
-  cout << float1
-       << endl; // output is broken from 1.123456 because the precision is 7
+    double double1{1.1234567890123456789};
+    cout << double1 << endl; // output is broken from 1.1234567890123456
 
-  double double1{1.1234567890123456789};
-  cout << double1 << endl; // output is broken from 1.1234567890123456
+    long double long_double1{1.1234567890123456789L}; // L indicates a long
+    cout << long_double1 << endl;
+  */
+  /*
+  Boolean Tyoe
+  */
 
-  long double long_double1{1.1234567890123456789L}; // L indicates a long
-  cout << long_double1 << endl;
+  bool red_light{true};
+  bool green_light{false};
+
+  if (red_light == true) {
+    cout << "Light is red" << endl;
+  } else {
+    cout << "Light is not red" << endl;
+  }
 }
