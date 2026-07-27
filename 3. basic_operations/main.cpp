@@ -10,7 +10,7 @@ int main(int argc, char const *argv[]) {
   /*
     Basic operations
   */
-
+  cout << "----------------------------" << endl;
   result = n1 + n2;
   cout << "sum : " << result << endl;
 
@@ -25,4 +25,27 @@ int main(int argc, char const *argv[]) {
 
   result = n1 % n3;
   cout << "mod : " << result << endl;
+
+  cout << "----------------------------" << endl;
+  /*
+    Increments
+  */
+
+  cout << "----------------------------" << endl;
+  short value{5};
+  cout << "Postfix increment in " << value << " gives " << value++ << endl;
+  cout << "Now value is " << value << endl;
+
+  cout << "Postfix decrement in " << value << " gives " << value-- << endl;
+  cout << "Now value is " << value << endl;
+
+  cout << "----------------------------" << endl;
+
+  cout << "Postfix increment in " << value << " gives " << ++value << endl;
+  cout << "Now value is " << value << endl;
+
+  cout << "Postfix decrement in " << value << " gives " << --value << endl;
+  cout << "Now value is " << value << endl;
+
+  cout << "----------------------------" << endl;
 }
