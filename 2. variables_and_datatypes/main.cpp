@@ -99,6 +99,7 @@ int main(int argc, char const *argv[]) {
   Boolean Tyoe
   */
 
+  /*
   bool red_light{true};
   bool green_light{false};
 
@@ -107,4 +108,16 @@ int main(int argc, char const *argv[]) {
   } else {
     cout << "Light is not red" << endl;
   }
+  */
+
+  /*
+    Character type
+  */
+  char character{'a'};            // occupies 1 byte
+  char ascii_table_character{72}; // stores H
+
+  cout << character << endl;
+  cout << ascii_table_character << endl;
+  cout << "value(int) : "
+       << static_cast<int>(character); // static_cast convert to integer
 }
