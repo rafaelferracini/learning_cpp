@@ -25,7 +25,6 @@ Existem dois tipos de erros que podem ser obtidos ao programar
 ---
 
 Depuração consiste em executar o código linha a linha para identificar erros de semântica. No LazyVim os atalhos para depuração são iniciados por espaço + d + [opção]
-<<<<<<< HEAD
 
 | Atalho | Ação             |
 | :----: | :---------------:|
@@ -36,13 +35,3 @@ Depuração consiste em executar o código linha a linha para identificar erros 
 |O       | step out         |
 |u       | DAP UI           |
 |t       | terminate        |
-=======
-| Atalho | Ação |
-|b | Toggle breakpoint |
-|c | continue / start |
-|i | step into|
-|o | step over|
-|O | step out|
-|u | DAP UI|
-|t | terminate |
->>>>>>> ef272f5e73add7937930cbb5a4dc8a7c5ce65ca1
