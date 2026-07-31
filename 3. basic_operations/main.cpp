@@ -48,4 +48,15 @@ int main(int argc, char const *argv[]) {
   cout << "Now value is " << value << endl;
 
   cout << "----------------------------" << endl;
+
+  /*
+    Compound assignaments
+  */
+
+  value = 45;
+  value += 5; // value = 50
+  value -= 5; // value = 45
+  value *= 2; // value = 90
+  value /= 3; // value = 30
+  value %= 4; // value = 2
 }
