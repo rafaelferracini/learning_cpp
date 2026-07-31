@@ -57,8 +57,8 @@ Os arquivos de cabeçalhos usam a extensão .h e a convenção para a importaç�
 
 É um recurso feito para combinar instruções definidas em bibliotecas distintas, mas com a mesma nomenclatura. Duas empresas podem desenvolver aplicações de cout e teriamos que especificar qual das duas devemos usam
 
-* empresa1::cout
-* empresa2::cout
+* `empresa1::cout`
+* `empresa2::cout`
 
 Para definir todos objetos para usar o codigo da empresa1 por padrão usamos
 
