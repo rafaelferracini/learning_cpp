@@ -50,3 +50,25 @@ Os arquivos de cabeçalhos usam a extensão .h e a convenção para a importaç�
 | C antigo  | .h        | math.h      | C/C++     |
 | C++ novo  | nada      | iostream    | C++       |
 | C convert.| prefixo c | cmath       | C++       |
+
+## Namespaces
+
+---
+
+É um recurso feito para combinar instruções definidas em bibliotecas distintas, mas com a mesma nomenclatura. Duas empresas podem desenvolver aplicações de cout e teriamos que especificar qual das duas devemos usam
+
+* empresa1::cout
+* empresa2::cout
+
+Para definir todos objetos para usar o codigo da empresa1 por padrão usamos
+
+```C++
+using namespace empresa1;
+```
+
+assim ao invez de `empresa1::cout` usamos apenas `cout`  
+
+As funções, classes e objetos padrões de C++ são definidas sobre o espaço de nomes std.
+
+* Para acessar tudo definido em std: `using namespace std;`
+* Para acessar apenas itens selecionados: `using std::cout;`
