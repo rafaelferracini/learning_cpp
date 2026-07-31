@@ -33,3 +33,20 @@ int main() \\ cabeçalho
 * chat ** argv: são os comandos em si
 
 Como main é uma função tipo 'int', é esperado retornar um valor (no caso return 0). O padrão ANSI/ISO C++ permite no entendo a omissão dessa instrução na função main. Usualmente é retornado o valor 0 caso o porgrama tenha executado com sucesso e um valor diferente caso tenha um erro (usualmente -1)
+
+## Arquivos de cabeçalho
+
+---
+
+Para a compilação do programa, o arquivo .cpp passa por um pré-processador, responsável pela modificação do código antes da compilação. Em especial, o pré-processador trata as diretivas que iniciam com #.A diretiva #include adiciona o conteudo de um arquivo ao código fonte do programa
+
+* iostream contém definições das funções de entrada e saidas de dados (e.g cin e cout)
+
+Os arquivos de cabeçalhos usam a extensão .h e a convenção para a importação desse arquivos é que se omita a extensão para bibliotecas padrões (iostream, math, etc) e se mencione para headers criados pelo proprio autor
+
+| Cabeçalho | Convenção | Exemplo     | Usado por |
+| :------:  | :-:       | :-:         | :-:       |
+| C++ antigo| .h        | iostream.h  | C++       |
+| C antigo  | .h        | math.h      | C/C++     |
+| C++ novo  | nada      | iostream    | C++       |
+| C convert.| prefixo c | cmath       | C++       |
