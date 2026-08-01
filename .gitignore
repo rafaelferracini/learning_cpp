@@ -1,0 +1,12 @@
+# Ignorar binários gerados pelo compilador (arquivos sem extensão em sistemas Unix)
+aula*/*
+!aula*/*.*
+!aula*/**/
+
+# Exceção para arquivos que devem ser mantidos no rastreamento
+!.gitignore
+!*.md
+!*.json
+!*.cpp
+!*.h
+!*.hpp
