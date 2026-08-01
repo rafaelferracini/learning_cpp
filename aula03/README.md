@@ -107,8 +107,7 @@ cin >> cenouras >> bananas >> abacaxi; // admite entrada separadas como 20 24 30
 
 ### Buffer do teclado
 
-A entrada de texto com `std::cin` utiliza um buf
-fer. Digitamos os dados separados por espaço até pressionar enter. Assim, o cin irá ler os valores até encontrar espaço e pular para o proximo cin, até o ultimo encontrar \n. Exemplo
+A entrada de texto com `std::cin` utiliza um buffer. Digitamos os dados separados por espaço até pressionar enter. Assim, o cin irá ler os valores até encontrar espaço e pular para o proximo cin, até o ultimo encontrar \n. Exemplo
 
 | Buffer |     |     |     |     |     |     |      |
 |:------:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
