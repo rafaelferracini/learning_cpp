@@ -80,9 +80,42 @@ cout << "25";
 cout << 25; // o cout sabe que 25 nesse caso é um tipo inteiro 
 ```
 
-em contra partida, a função `printf()` em C não consegue fazer essa distinção
+em contra partida, a função `printf()` em C não consegue fazer essa distinção, sendo necessário identificar com %[tipo]
 
 ```C
 printf("String: %s", "cenouras");
 printf("Inteiro: %i", cenouras);
+```
+
+## Entradas de Dados
+
+---
+
+A biblioteca `iostream` tem também a instrução para entrada de dados, `std::cin`. `cin` acessa a entrada padrão do computador (teclado) e extrai utilizando `>>` para uma variável
+
+```C
+int cenouras;
+cin >> cenouras;
+```
+
+Permite também concatenar múltiplas leituras em uma única instrução
+
+```C
+int cenouras, bananas, abacaxi;
+cin >> cenouras >> bananas >> abacaxi; // admite entrada separadas como 20 24 30, ou 20 <enter> 24 <enter> 30
+```
+
+### Buffer do teclado
+
+A entrada de texto com `std::cin` utiliza um buf
+fer. Digitamos os dados separados por espaço até pressionar enter. Assim, o cin irá ler os valores até encontrar espaço e pular para o proximo cin, até o ultimo encontrar \n. Exemplo
+
+| Buffer |     |     |     |     |     |     |      |
+|:------:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
+| '3'    | '8' | ' ' | '2' | '9' | ' ' | '2' | '\n' |
+
+```C
+cin >> x; // le 3 e 8, encontra espaço e pula
+cin >> y; // le 2 e 9 encontra espaço e pula
+cin >> z; // le 2 e encontra \n finalizando o buffer
 ```
