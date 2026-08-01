@@ -44,3 +44,22 @@ int maior(int a, int b){
 
 }
 ```
+
+### Parâmetros e Argumentos
+
+Ao ser definida uma função, devemos passar o **parâmetro** que ela deve receber, seja ela inteiro, void, double, etc. Ao definir isso, a função deve ser chamada passando uma variável ou valor como **argumento** que corresponda ao tipo do seu parâmetro
+
+```C
+int quadrado(int); // é indicado que a função quadrado recebe como parâmetro um valor inteiro
+
+int main(){
+  int numero = 3;
+   cout << quadrado(numero) // numero é passado como argumento para a função que retorna o valor dele quadrado
+}
+
+int quadrado(int n){ // O argumento é passado para a f:unção e o seu valor é passado para uma variável n definida no escopo da função
+  return n**2
+}
+```
+
+Note que apenas na definição de uma função é preciso dar o nome aos parâmetros, no protótipo só é necessário identificar o tipo dele. Os parâmetros de uma função são declarações de novas variáveis que recebem o valor dos argumentos.
