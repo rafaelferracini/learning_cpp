@@ -1,5 +1,4 @@
 # Aula 06 - Tipos Inteiros | Variáveis | Constantes | Overflow | Underflow
-
 Computadores trabalham com diversos tipos de dados (texto, números, audios, etc...) e independente do tipo de dado tratado ele lê como sendo um conjunto de bits. Os dados são gravados em **unidades de armazenamento**  e carregados na **memória** para a execução. Outra forma de um programa obter dados é lendo-os a partir da entrada para memória (teclado, mouse, etc...).
 
 Por outro lado, os programas geram dados armazenando-os na memória, transferindo para arquivos e escrevendo na saída (tela). Para guardar um dado na memória o programa precisa definir:
