@@ -3,10 +3,6 @@
 #include <iostream>
 using namespace std;
 
-#define GREEN "\033[32m"
-#define RED "\033[31m"
-#define DEFAULT "\033[m"
-
 int main(int argc, char *argv[]) {
 
   unsigned int sol1{60504}, sol2{25000}, sol3{12329}, sol4{38054}, sol5{1259},
@@ -23,36 +19,13 @@ int main(int argc, char *argv[]) {
   cout << "----------------------------" << endl;
   cout << "Resultado da Avaliação" << endl;
   cout << "----------------------------" << endl;
-  if (avaliacao(sol1)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
-  if (avaliacao(sol2)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
-  if (avaliacao(sol3)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
-  if (avaliacao(sol4)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
-  if (avaliacao(sol5)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
-  if (avaliacao(sol6)) {
-    cout << " - " << GREEN << "OK" << DEFAULT << endl;
-  } else {
-    cout << " - " << RED << "X" << DEFAULT << endl;
-  }
+
+  avaliar(sol1);
+  avaliar(sol2);
+  avaliar(sol3);
+  avaliar(sol4);
+  avaliar(sol5);
+  avaliar(sol6);
   cout << "----------------------------" << endl;
 
   return 0;

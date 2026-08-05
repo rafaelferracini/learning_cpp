@@ -1,1 +1,1 @@
-bool verificarBit(int, int);
+bool testarBit(int, int);

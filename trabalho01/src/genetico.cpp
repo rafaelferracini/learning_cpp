@@ -1,5 +1,9 @@
 #include "../include/binario.h"
 #include <iostream>
+
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+#define DEFAULT "\033[m"
 bool avaliacao(int solucao) {
 
   int peso{0};
@@ -8,7 +12,7 @@ bool avaliacao(int solucao) {
 
   // 1 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0
   for (int i = 0; i < 16; i++) {
-    if (verificarBit(i, solucao)) {
+    if (testarBit(i, solucao)) {
       if (i == 15) { // Objeto A -
         peso += 12;
         valor += 4;
@@ -83,4 +87,13 @@ bool avaliacao(int solucao) {
   }
 
   return validade;
+}
+
+void avaliar(int solucao) {
+
+  if (avaliacao(solucao)) {
+    std::cout << " - " << GREEN << "OK" << DEFAULT << std::endl;
+  } else {
+    std::cout << " - " << RED << "X" << DEFAULT << std::endl;
+  }
 }

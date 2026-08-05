@@ -1,4 +1,4 @@
-bool verificarBit(int digito, int solucao) {
+bool testarBit(int digito, int solucao) {
 
   unsigned int mascara = 1;    // 0 0 0 0 0 0 0 1
   mascara = mascara << digito; // 0 0 0 0 1 0 0 0
