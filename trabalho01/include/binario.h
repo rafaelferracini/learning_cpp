@@ -1,0 +1,1 @@
+bool verificarBit(int, int);
