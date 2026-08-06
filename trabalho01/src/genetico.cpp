@@ -10,7 +10,6 @@ bool avaliacao(int solucao) {
   int valor{0};
   bool validade{false};
 
-  // 1 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0
   for (int i = 0; i < 16; i++) {
     if (testarBit(i, solucao)) {
       if (i == 15) { // Objeto A -
@@ -96,4 +95,16 @@ void avaliar(int solucao) {
   } else {
     std::cout << " - " << RED << "X" << DEFAULT << std::endl;
   }
+}
+
+bool cruzamentoPontoUnico(int solucaoA, int solucaoB) {
+
+  // 1 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0
+  // 0 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0
+  unsigned int solucaoNova;
+
+  for (int i = 0; i < 16; i++) {
+  }
+
+  return avaliacao(solucaoNova);
 }
