@@ -97,14 +97,26 @@ void avaliar(int solucao) {
   }
 }
 
-bool cruzamentoPontoUnico(int solucaoA, int solucaoB) {
+int cruzamentoPontoUnico(int solucaoA, int solucaoB) {
 
   // 1 1 1 0 1 1 0 0 0 1 0 1 1 0 0 0
   // 0 1 1 0 0 0 0 1 1 0 1 0 1 0 0 0
   unsigned int solucaoNova;
+  unsigned int mascara{1};
 
   for (int i = 0; i < 16; i++) {
+    mascara = mascara << i;
+    if (i < 8) {
+      if (testarBit(i, solucaoB)) {
+        solucaoNova = solucaoNova ^ mascara;
+      }
+    } else {
+      if (testarBit(i, solucaoA)) {
+        solucaoNova = solucaoNova ^ mascara;
+      }
+    }
+    mascara = 1;
   }
 
-  return avaliacao(solucaoNova);
+  return solucaoNova;
 }

@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
   avaliar(sol5);
   avaliar(sol6);
   cout << "----------------------------" << endl;
+  avaliar(cruzamentoPontoUnico(sol1, sol2));
 
   return 0;
 }
