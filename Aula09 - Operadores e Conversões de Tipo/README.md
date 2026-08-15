@@ -203,3 +203,41 @@ int b = soma(3.0, 4.0); // funcao converte para float e retorno de float para in
 float c = soma(3.0f, 4.0f);
 
 ```
+
+## Type Casts
+
+--- 
+
+A linguagem permite ao programador forçar conversões
+
+```C
+float parcial = 5.4;
+int resultado = int (3.8) + int (parcial);
+
+int total = int (parcial); // estilo c++
+int total = (int) parcial; // estilo c 
+
+cout << int ('A'); // 65
+cout << char (65); // A
+
+long long bignum = long long (10'000'000'000) * 2009
+```
+
+
+## Declarações auto 
+
+--- 
+
+C++11 introduziu a possibilidade de deduzir o tipo a partir do valor de inicialização usando o fato do compilador já conhecer o tipo da constante que está sendo atribuída a variável e deduzindo o tipo da variável a partir dela
+```C
+auto n = 100;
+auto x = 1.5f;
+auto y = 1.3e5; 
+```
+
+Contudo o `auto` foi utilizado para dedução de automática de casos mais complexos, especialmente POO 
+```C
+vector<double> vet; 
+vector<double>::iterator i = vet.begin();
+auto i = vet.begin(); // note a complexidade do tipo, mt longo pra ficar digitando
+```
