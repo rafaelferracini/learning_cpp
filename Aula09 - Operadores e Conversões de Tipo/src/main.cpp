@@ -3,12 +3,15 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
 
-  int min, max;
-  cout << "Entre com os valores min e max: ";
-  cin >> min >> max;
+  long long a, b, c, d;
 
-  cout << "Sorteando um valor nesta faixa: " << endl;
-  int sorteio = min + rand() % (max - min + 1);
-  cout << sorteio << endl;
-  return 0;
+  a = 379834789324;
+  b = 34749238 * 2903;
+  c = 100032238LL * 2009;
+  d = 184239089043980 * 2009;
+
+  cout << a << endl;
+  cout << b << endl;
+  cout << c << endl;
+  cout << d << endl;
 }
