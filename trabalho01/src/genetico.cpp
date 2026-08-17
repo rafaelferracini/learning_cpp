@@ -120,3 +120,35 @@ int cruzamentoPontoUnico(int solucaoA, int solucaoB) {
 
   return solucaoNova;
 }
+
+int cruzamentoAritmetico(int solucaoA, int solucaoB) {
+
+  unsigned int solucaoNova;
+
+  solucaoNova = solucaoA & solucaoB;
+
+  return solucaoNova;
+}
+
+int mutacaoSimples(int solucao, int digito) {
+
+  unsigned int solucaoNova;
+  unsigned int mascara = 1;
+
+  mascara = mascara << digito;
+
+  solucaoNova = solucao ^ mascara;
+
+  return solucaoNova;
+}
+
+int mutacaoDupla(int solucao, int digitoUm, int digitoDois) {
+
+  unsigned int solucaoNova;
+
+  solucaoNova = mutacaoSimples(solucao, digitoUm);
+
+  solucaoNova = mutacaoSimples(solucaoNova, digitoDois);
+
+  return solucaoNova;
+}
