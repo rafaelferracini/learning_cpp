@@ -1,0 +1,1 @@
+bool testarBit(int, int);
