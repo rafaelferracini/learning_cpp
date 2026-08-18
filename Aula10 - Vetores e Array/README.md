@@ -79,3 +79,64 @@ constexpr int Tam =  5 * sizeof(int);
 const int Max = rand(); // também é um valor constante 
 constexpr int Max = rand(); // esse não passa pelo compilador, pois o valor de rand() só é determinado a partir da execução e não durante a compilação
 ```
+
+## Inicialização de vetores
+--- 
+
+Os elementos dos vetores são armazenados na memória em posição consecutivas, com cada elemento sendo representado por um índice que inicia em 0. 
+
+```C
+int vet[5];
+```
+```
+```
+
+Os elementos são acessados individualmente pelo seus respectivos índices 
+
+```C
+int visitas[365];
+
+visitas[0] = 38;
+visitas[1] = 54;
+```
+
+outra forma de inicializar os vetores é atribuindo o valor diretamente na declaração
+
+```C
+int custo[3] = {30, 20, 15}; // essa notação só funciona com inicialização
+
+int custo[3];
+custo = {10, 20, 30} // não funciona precisa atribuir individualmente 
+custo[0] = 10 ;
+custo[1] = 20;
+custo[2] = 30;
+
+```
+
+vetores não inicializados possuem lixo de memória pois o programa fixa a posição do vetor na memória que já foi usada para outra coisa.
+
+Não é possível definir um vetor dentro de outro 
+
+```C
+int cartas[4] = {10, 20, 30, 40};
+int mao[4];
+mao = cartas
+```
+
+Isso acontece pq o programa guarda o vetor como sendo um endereço na memória, então é como se quisessemos guardar o endereço da memória de `cartas` em `mao`, mas `mas` em si também é apenas um endereço e não um espaço.
+
+Ainda é possível inicializar um vetor em alguimas posições (e nao o vetor inteiro) e nesse caso as demais posições são inicializadas com 0. 
+
+```C
+float vet[100] = {5, 4} // o primeiro valor é 5, o segundo é 4 e os demais são 0 
+
+float vet[] = {0} // o vetor inteiro vira 0
+```
+
+Se não for passado o tamanho do vetor, mas sim seus elementos, o compilador assume que a quantidade elementos passados é o tamanho do vetor
+
+```C
+short vet[] = {1, 2, 3, 4} // vet tem tamanho 3
+```
+
+

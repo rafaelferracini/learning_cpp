@@ -2,7 +2,9 @@
 
 int main(int argc, char *argv[]) {
 
-  std::cout << "Inicio";
+  int vet[3];
 
+  vet[4000] = 50;
+  std::cout << vet[4000];
   return 0;
 }
