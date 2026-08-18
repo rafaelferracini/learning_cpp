@@ -162,5 +162,32 @@ int somaVetor(int vet[], int tam){
 
   }
 }
-
 ```
+
+
+## Alternativas para o vetor (Curiosidade)
+
+--- 
+
+A classe template `vector` é uma alternativa ao vetor tradicional da linguagem C++ cujo o tamanho do vetor cresce automaticamente 
+
+```C
+#include <iostream>
+#include <vector>
+
+using namespace std; 
+
+int main() {
+
+  vector<int> vetI; // cria um vetor vazio de ints
+  int n;
+  cin >> n;
+  vector<double> vetD(n); // cria vetor com n doubles
+
+}
+```
+
+A contra partida desse vetor é o seu uso de memória. Inicialmente, por não saber o tamanho necessário, ele reserva um certo espaço na memória, ao encher o vetor, ele cria um novo vetor com o dobro do tamanho e faz uma copia dos elementos do antigo para esse. Esse processo tem um custo muito alto
+
+Outra alternativa é a classe template `array` que tem tamanho fixo mas fornece uma segurança maior por checar se a posição da memória que está tentando ser acessada está disponivel ou não, mitigando o erro que apresentamos na seção anterior
+
