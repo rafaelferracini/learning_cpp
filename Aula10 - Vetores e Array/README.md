@@ -139,4 +139,28 @@ Se não for passado o tamanho do vetor, mas sim seus elementos, o compilador ass
 short vet[] = {1, 2, 3, 4} // vet tem tamanho 3
 ```
 
+## Vetores e Funções 
 
+--- 
+
+Podemos ainda passar vetores como argumentos de funções. Para isso usamos colchetes no protótipo da função e não é preciso passar a quantidade de elementos do vetor
+
+```C
+int somaVetor(int []);
+int ultimoChar(char []);
+
+int somaVetor(int vet[]){
+  return vet[0] + vet[1] + vet[2];
+}
+```
+
+Para iterarmos em um vetor de tamanho qualquer precisamos especificar o tamanho do vetor 
+
+```C
+int somaVetor(int vet[], int tam){
+  for (int i = 0; i < tam; ++i){
+
+  }
+}
+
+```
